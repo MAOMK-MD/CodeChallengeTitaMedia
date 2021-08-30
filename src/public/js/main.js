@@ -6,4 +6,8 @@ const initHamburger = () => {
    })
 }
 
+const getPhotos = async () => {
+   
+}
+
 initHamburger();

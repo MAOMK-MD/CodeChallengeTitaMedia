@@ -1,0 +1,11 @@
+-var links = ['All', 'Branding', 'Web', 'Photography', 'App'];
+
+section.grid-nav
+   .grid-nav__container
+      each link in links
+         if link == 'All'
+            .grid-nav__item.is-active
+               a(href="#")=link
+         else
+            .grid-nav__item
+               a(href="#")=link

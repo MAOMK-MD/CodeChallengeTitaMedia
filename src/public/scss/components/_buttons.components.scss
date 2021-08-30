@@ -1,14 +1,21 @@
 .button{
-   display: flex;
-   justify-content: center;
    align-items: center;
+   border: none;
    color: inherit;
+   display: flex;
    height: 2rem;
+   justify-content: center;
+   outline: none;
    text-decoration: none;
    width: 100%;
 
    &--secondary{
       background-color: #FFF;
       color: $c-primary;
+   }
+
+   &--primary{
+      background-color: $c-primary;
+      color: #FFF;
    }
 }

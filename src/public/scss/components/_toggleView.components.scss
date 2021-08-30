@@ -1,0 +1,44 @@
+.toggle{
+   &-view{
+      align-items: center;
+      display: flex;
+      height: 4rem;
+      justify-content: center;
+      width: 100%;
+   }
+
+   &-item{
+      background-color: #FFF;
+      cursor: pointer;
+      display: grid;
+      gap: 4px;
+      height: 30px;
+      width: 30px;
+
+      &:hover,
+      &.is-active{
+         background-color: #FFF;
+         border: 0;
+
+         span{
+            background-color: $c-primary;
+         }
+      }
+
+      span{
+         background-color: #FFF;
+         border: 2px solid $c-primary;
+      }
+
+      &--grid{
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         margin-right: 2rem;
+      }
+
+      &--list{
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
+      }
+   }
+}

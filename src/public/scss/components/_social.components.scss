@@ -1,0 +1,30 @@
+.social{
+   &__container{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 90%;
+   }
+
+   &__item{
+      height: 2rem;
+      width: 2rem;
+
+      a{
+         display: block;
+         height: 100%;
+         width: 100%;
+
+         svg{
+            height: 100%;
+            width: 100%;
+
+            .cls-1{
+               fill:#c2cfd7;
+            }
+         }
+      }
+
+      
+   }
+}
