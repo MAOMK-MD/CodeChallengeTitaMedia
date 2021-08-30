@@ -12,5 +12,13 @@
     "challenge"
   ],
   "author": "Camilo Torres",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAOMK-MD/CodeChallengeTitaMedia.git"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2",
+    "sass": "^1.38.2"
+  }
 }

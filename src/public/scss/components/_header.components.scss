@@ -1,0 +1,105 @@
+.header{
+   align-items: center;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   width: 100%;
+   position: relative;
+   height: 14vh;
+
+   &__container{
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      width: 90%;
+   }
+
+   .logo{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 70%;
+
+      &__img{
+         width: 25%;
+
+         svg{
+            .cls-1,.cls-2{
+               fill:none;stroke:#000;stroke-miterlimit:10;
+            }
+
+            .cls-1{
+               stroke-width:1.5px;
+            }
+            .cls-2{
+               stroke-width:0.75px;
+            }
+            .cls-3{
+               fill:#ff5773;
+            }
+         }
+      }
+
+      &__txt{
+         align-items: center;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 65%;
+
+         svg{
+            .cls-1{fill:#c3d0d8;}
+            .cls-2{fill:#707070;}
+         }
+      }
+   }
+
+   .menu{
+      width: 30%;
+
+      &__hamburger{
+         align-items: center;
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: center;
+         width: 100%;
+      }
+   }
+
+   .nav{
+      color: $c-primary;
+      display: none;
+      flex-flow: column;
+      height: 86vh;
+      justify-content: space-around;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 100vw;
+      animation: slide-left .3s ease-in forwards;
+      opacity: 0;
+
+      &.is-active{
+         display: flex;
+         left: 0%;
+         opacity: 1;
+         animation: slide-right .3s ease-in forwards;
+      }
+
+      &__item{
+         align-items: center;
+         display: flex;
+         flex-flow: row nowrap;
+         font-size: 1.5rem;
+         height: 3rem;
+         justify-content: center;
+         width: 100%;
+
+         a{
+            color: inherit;
+            text-decoration: none;
+         }
+      }
+   }
+}
