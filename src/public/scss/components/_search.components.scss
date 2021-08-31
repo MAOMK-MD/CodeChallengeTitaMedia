@@ -1,6 +1,6 @@
-/*
-   #SEARCH
-*/
+/*!
+ * #Search
+ */
 .search{
    grid-column: 4/5;
    height: 3rem;
@@ -59,14 +59,18 @@
       }
 
       &--container{
-         align-items: center;
+         @include flexCenter;
          border-radius: .2rem;
          border: 1px solid $c-primary;
-         display: flex;
          height: 2rem;
-         justify-content: center;
          overflow: hidden;
          width: 87%;
+
+         form{
+            @include flexCenter;
+            height: 100%;
+            width: 100%;
+         }
 
          input{
             border: none;

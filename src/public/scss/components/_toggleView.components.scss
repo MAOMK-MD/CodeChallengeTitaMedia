@@ -1,6 +1,6 @@
-/*
-   #TOGGLE-VIEW
-*/
+/*!
+ * #ToggleView
+ */
 .toggle{
    &-view{
       align-items: center;
@@ -8,6 +8,10 @@
       height: 4rem;
       justify-content: center;
       width: 100%;
+
+      @media screen and (min-width: 800px) {
+         display: flex;
+      }
    }
 
    &-item{

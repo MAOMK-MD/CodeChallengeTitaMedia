@@ -24,7 +24,6 @@ const getData = async (page,query) => {
       }
    }
 
-
    try {
       const response = await fetch(apiUrl);
       const data = await response.json();

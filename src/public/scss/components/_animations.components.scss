@@ -1,3 +1,6 @@
+/*!
+ * #KeyFrames
+ */
 @keyframes slide-left {
    from{
       left: 0;
@@ -13,6 +16,14 @@
       opacity: 0;
    }to{
       left: 0;
+      opacity: 1;
+   }
+}
+
+@keyframes fade-in {
+   from{
+      opacity: 0;
+   }to{
       opacity: 1;
    }
 }

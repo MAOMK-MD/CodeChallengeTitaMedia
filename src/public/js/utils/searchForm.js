@@ -8,7 +8,7 @@ const initSearch = () => {
 
    searchForm.addEventListener('mouseleave', () => {
       setTimeout(() => {
-         searchForm.classList.toggle('is-active');
+         searchForm.classList.remove('is-active');
       }, 3000);
    })
 }
