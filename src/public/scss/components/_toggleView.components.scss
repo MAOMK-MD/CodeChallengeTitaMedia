@@ -1,7 +1,10 @@
+/*
+   #TOGGLE-VIEW
+*/
 .toggle{
    &-view{
       align-items: center;
-      display: flex;
+      display: none;
       height: 4rem;
       justify-content: center;
       width: 100%;

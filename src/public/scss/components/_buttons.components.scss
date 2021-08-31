@@ -1,21 +1,30 @@
+/*
+   #BUTTONS
+*/
+/// File: ../settings/_mixin.settings
+
 .button{
-   align-items: center;
+   @include flexCenter;
    border: none;
    color: inherit;
-   display: flex;
+   cursor: pointer;
+   font-size: .8rem;
    height: 2rem;
-   justify-content: center;
+   letter-spacing: .1rem;
    outline: none;
    text-decoration: none;
    width: 100%;
 
-   &--secondary{
-      background-color: #FFF;
-      color: $c-primary;
+   &--primary{
+      @include buttonModifier($c-primary, rgba(0, 0, 0, 0.267), #FFF);
    }
 
-   &--primary{
-      background-color: $c-primary;
-      color: #FFF;
+   &--secondary{
+      @include buttonModifier(#FFF, $c-primary, $c-primary);
+   }
+
+   &:hover,
+   &:active{
+      box-shadow: none;
    }
 }

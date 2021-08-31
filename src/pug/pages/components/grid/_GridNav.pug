@@ -4,8 +4,8 @@ section.grid-nav
    .grid-nav__container
       each link in links
          if link == 'All'
-            .grid-nav__item.is-active
-               a(href="#")=link
+            .grid-nav__item.js-navItem.is-active
+               a(href='#', data-name=link)=link
          else
-            .grid-nav__item
-               a(href="#")=link
+            .grid-nav__item.js-navItem
+               a(href='#', data-name=link)=link

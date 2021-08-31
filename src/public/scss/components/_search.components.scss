@@ -1,0 +1,82 @@
+/*
+   #SEARCH
+*/
+.search{
+   grid-column: 4/5;
+   height: 3rem;
+   position: relative;
+   width: 3rem;
+
+   &__button{
+      @include flexCenter;
+      background-color: #FFF;
+      border: none;
+      cursor: pointer;
+      height: 100%;
+      outline: none;
+      width: 100%;
+
+      svg{
+         height: 2rem;
+         width: 2rem;
+
+         .cls-1{
+            fill: $c-primary;
+         }
+      }
+
+      &--input{
+         background-color: $c-primary;
+         border: none;
+         color: #FFF;
+         cursor: pointer;
+         height: 100%;
+         letter-spacing: .1rem;
+         outline: none;
+         width: 23%;
+      }
+   }
+
+   &__form{
+      @include flexCenter;
+      background-color: rgba($color: #FFF, $alpha: .9);
+      box-shadow: 0px 2px 2px $c-primary;
+      height: 0rem;
+      opacity: 0;
+      overflow: hidden;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      width: 100%;
+      transition: all .3s ease-in;
+
+      &.is-active{
+         @include flexCenter;
+         height: 4rem;
+         opacity: 1;
+         transition: all .3s ease-in;
+      }
+
+      &--container{
+         align-items: center;
+         border-radius: .2rem;
+         border: 1px solid $c-primary;
+         display: flex;
+         height: 2rem;
+         justify-content: center;
+         overflow: hidden;
+         width: 87%;
+
+         input{
+            border: none;
+            color: $c-primary;
+            height: 100%;
+            letter-spacing: .1rem;
+            outline: none;
+            padding-left: 1rem;
+            width: 80%;
+         }
+      }
+   }
+}

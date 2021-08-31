@@ -1,3 +1,7 @@
+/*
+   #GRID-LAYOUT
+*/
+
 .grid{
    &-layout{
       align-items: center;
@@ -7,24 +11,34 @@
       width: 100%;
 
       &__container{
+         // grid-template-rows: 15rem;
          display: grid;
          gap: 1rem;
-         grid-template-columns: 1fr;
-         margin-bottom: 2rem;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         margin: 1rem 0 2rem;
+         max-width: 800px;
          width: 90%;
       }
 
       &__item{
+         height: 100%;
          width: 100%;
+
+         img{
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+         }
 
          &--main{
             align-items: center;
-            background-color: $c-primary;
+            background-color: rgba($color: $c-primary, $alpha: .9) ;
             color: #FFF;
             display: flex;
             flex-direction: column;
-            height: 8rem;
             justify-content: center;
+            min-height: 15rem;
             text-align: center;
 
             h2{

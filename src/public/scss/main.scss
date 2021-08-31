@@ -1,8 +1,15 @@
 @import 'settings/color.settings';
+@import 'settings/mixin.settings';
+
+@import 'generic/fonts';
 @import 'generic/reset.generic';
 @import 'generic/hamburgers.generic';
 
+@import 'base/body.base';
+@import 'base/heading.base';
+
 @import 'components/header.components';
+@import 'components/search.components';
 @import 'components/hero.components';
 @import 'components/buttons.components';
 @import 'components/toggleView.components';

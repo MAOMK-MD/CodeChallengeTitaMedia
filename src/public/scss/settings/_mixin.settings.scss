@@ -1,0 +1,11 @@
+@mixin buttonModifier($bg-color, $shadow-color, $color-txt){
+   background-color: $bg-color;
+   box-shadow: 2px 2px 4px $shadow-color;
+   color: $color-txt;
+}
+
+@mixin flexCenter {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
